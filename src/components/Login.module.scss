@@ -1,0 +1,22 @@
+@import '../mixins.scss';
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+  @include block;
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  span {
+    text-transform: uppercase;
+    color: rgb(207, 163, 82);
+  }
+  input {
+    min-width: 60px;
+  }
+}
